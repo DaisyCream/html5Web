@@ -1,0 +1,221 @@
+
+*{
+    /*border: 1px solid #000000;*/
+}
+
+h1{
+    margin: 0px;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+nav{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 70px;
+
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    border-bottom: 2px solid #000000;
+}
+
+header #more{
+    height: 80px;
+    position: absolute;
+    left: 6%;
+    font-size: 40px;
+    text-align: center;
+    line-height: 200%;
+
+    top: 50%;
+    margin-top: -40px;
+}
+
+
+header h1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 70px;
+
+    text-align: center;
+    line-height: 180%;
+}
+
+header #sync {
+    height: 80px;
+    position: absolute;
+    right: 6%;
+    font-size: 40px;
+    text-align: center;
+    line-height: 200%;
+
+    top: 50%;
+    margin-top: -40px;
+}
+
+article{
+    width: 100%;
+    background-color: #eeeeee;
+    overflow: scroll;
+
+    border-bottom: 2px solid #000000;
+
+}
+
+article aside{
+    position: absolute;
+    right: 2%;
+}
+
+
+article aside ul{
+    width: 40px;
+    position: relative;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+article aside ul:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+article aside ul li{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+}
+
+article section{
+    position: relative;
+    width: 100%;
+
+
+}
+
+
+article section ul{
+    position: relative;
+}
+
+
+article section ul li{
+    position: relative;
+    border-bottom: 2px solid #000000;
+
+    line-height: 200px;
+    font-size: 40px;
+    text-align: center;
+}
+
+article section ul li img{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+article section ul li img:first-child{
+    width: 145px;
+    position: absolute;
+    left: 0px;
+}
+
+article section ul li img:last-child{
+    position: absolute;
+    right: 15%;
+}
+
+
+
+
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    bottom: 0px;
+
+}
+
+footer nav{
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+
+
+footer nav ul{
+    position: relative;
+    width: 100%;
+    height: 120px;
+
+}
+
+
+
+footer nav ul li{
+    width: 32.9%;
+    height: 120px;
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+    line-height: 250%;
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+
+
+footer nav ul li:first-child{
+    border-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
