@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        width: 100%;
+        height: 200px;
+        border: 1px solid #000000;
+    }
+
+    #main{
+        width: 100%;
+        height: 400px;
+        display: flex;
+    }
+
+    #main > article{
+        flex: 1;
+        order: 2;
+        border: 1px solid #000000;
+    }
+
+    #main > nav{
+        width: 200px;
+        order: 1;
+        border: 1px solid #000000;
+    }
+
+    #main > aside{
+        width: 200px;
+        order: 3;
+        border: 1px solid #000000;
+    }
+
+    footer{
+        width: 100%;
+        height: 200px;
+        /*flex: 1;*/
+        border: 1px solid #000000
+    }
+
+    @media all and (max-width : 600px) {
+        #main{
+            flex-direction: column;
+        }
+        #main > article, #main > nav ,#main > aside{
+            width: auto;
+        }
+    }
+
+</style>
+<body>
+<section>
+    <header></header>
+    <div id="main">
+        <article>
+            按罚款的魔法卡卡洛斯的叫法快乐的房间爱离开阿里肯定就发来看房间啊
+            安慰法你减肥哇呜呜呜呜呜案发看完你你你你你你你你你你阿斯顿和发送
+            的环境法大爆发的那份阿斯顿发健康啦啦啦啦啦案说法乌尔禾发金额发挥
+            空间案件时肯定会发空间的范围awefwefa
+        </article>
+        <nav>
+            按罚款的魔法卡卡洛斯的叫法快乐的房间爱离开阿里肯定就发来看房间啊
+            安慰法你减肥哇呜呜呜呜呜案发看完你你你你你你你你你你阿斯顿和发送
+            的环境法大爆发的那份阿斯顿发健康啦啦啦啦啦案说法乌尔禾发金额发挥
+            空间案件时肯定会发空间的范围
+        </nav>
+        <aside>
+            按罚款的魔法卡卡洛斯的叫法快乐的房间爱离开阿里肯定就发来看房间啊
+            安慰法你减肥哇呜呜呜呜呜案发看完你你你你你你你你你你阿斯顿和发送
+            的环境法大爆发的那份阿斯顿发健康啦啦啦啦啦案说法乌尔禾发金额发挥
+            空间案件时肯定会发空间的范围
+        </aside>
+    </div>
+
+    <footer></footer>
+</section>
+</body>
+</html>

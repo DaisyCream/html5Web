@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    #deals{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .sale-item{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .sale-item > img {
+        order: -1;
+        align-self: center /*在侧轴（水平向置中图像）*/
+    }
+
+    .sale-item > button{
+        margin-top: auto; /*自动顶端外边距让按钮置底*/
+    }
+
+</style>
+<body>
+    <section id="deals">
+        <section class="sale-item">
+            <h1>电脑初学者配备</h1>
+            <p>如果你的钱不够多，这是你可以买到的最好的电脑</p>
+            <ul>
+                <li>电脑</li>
+                <li>屏幕</li>
+                <li>键盘</li>
+                <li>鼠标</li>
+            </ul>
+            <img src="http://dev.w3.org/csswg/css3-flexbox/images/computer.jpg" />
+            <button>下单！</button>
+        </section>
+        <section class="sale-item">
+            <h1>电脑初学者配备</h1>
+            <p>如果你的钱不够多，这是你可以买到的最好的电脑</p>
+            <ul>
+                <li>电脑</li>
+                <li>屏幕</li>
+                <li>键盘</li>
+                <li>鼠标</li>
+            </ul>
+            <img src="http://dev.w3.org/csswg/css3-flexbox/images/computer.jpg" />
+            <button>下单！</button>
+        </section>
+        <section class="sale-item">
+            <h1>电脑初学者配备</h1>
+            <p>如果你的钱不够多，这是你可以买到的最好的电脑</p>
+            <ul>
+                <li>电脑</li>
+                <li>屏幕</li>
+                <li>键盘</li>
+                <li>鼠标</li>
+            </ul>
+            <img src="http://dev.w3.org/csswg/css3-flexbox/images/computer.jpg" />
+            <button>下单！</button>
+        </section>
+    </section>
+
+</body>
+</html>
