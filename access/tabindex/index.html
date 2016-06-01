@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <ul>
+        <li><input type="text" /></li>
+        <li><input type="text" /></li>
+        <li><input type="text" /></li>
+    </ul>
+</body>
+</html>
+
+<script>
+var inputBlock = document.getElementsByTagName('input');
+
+function inputEnterTurn(target ,keyCode){
+    window.onkeydown = function(e){
+        var index; //标识元素
+        e = e || window.event; //分辨IE
+        if(!isNaN(index = isTextFocus())){//检查焦点是否在input框上
+            if(e.keyCode == keyCode){//是否按下自定义按钮
+                inputTurnDown(index);
+            }
+
+            else if(e.keyCode == 38){
+                inputTurnUp(index);
+            }
+
+            else if(e.keyCode == 40){
+                inputTurnDown(index);
+            }
+        }
+    };
+
+    function isTextFocus(){
+        var obj = document.activeElement;//获取活动元素
+        for(var i=0;i <target.length;i++){
+            if(target[i] == obj){
+                return i;
+            }
+        }
+        return false;
+    }
+
+    function inputTurnDown(index){
+        index++;
+        index = (index >= 0 && index<=2) ? index : index%3;
+        target[index].focus();//获取焦点
+    }
+
+    function inputTurnUp(index){
+        index--;
+        while(index < 0){
+            index += 3;
+        }
+        target[index].focus();//获取焦点
+
+    }
+}
+
+inputEnterTurn(inputBlock, 13);
+
+
+
+
+
+</script>
+
