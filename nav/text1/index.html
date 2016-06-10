@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        background-color: aquamarine;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    header > #menu{
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+        display: none;
+    }
+
+    header > #menu:hover{
+        color: #ffffff;
+    }
+
+    header > nav{
+        position: relative;
+        border: 1px solid #000000;
+        display: inline-block;
+        /*margin-left:35%;*/
+    }
+
+
+
+    header > nav > ul{
+        /*border: 1px solid #000000;*/
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    header > nav > ul > li{
+        margin-left: 40px;
+        border: 1px solid #000000;
+        list-style: none;
+        line-height: 100%;
+    }
+
+    @media all and (max-width: 500px) {
+        header > nav{
+            position: absolute;
+            right: 0px;
+            top: 40px;
+            display: none;
+        }
+
+        header > #menu{
+            display: block;
+        }
+
+        header > nav > ul {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
+        header > nav > ul > li{
+            padding: 10px 40px 10px 40px;
+            margin: 0px;
+        }
+    }
+
+</style>
+<body>
+    <header>
+        <div id="menu">
+            menu
+        </div>
+        <nav>
+            <ul>
+                <li>111</li>
+                <li>222</li>
+                <li>333</li>
+                <li>444</li>
+                <li>555</li>
+                <li>666</li>
+            </ul>
+
+        </nav>
+
+    </header>
+</body>
+</html>
+<script>
+    var  menu = document.getElementById("menu");
+
+    menu.onmousemove = function(){
+        document.getElementsByTagName('nav')[0].style.display = "block";
+    };
+
+    menu.onmouseout = function(){
+        document.getElementsByTagName('nav')[0].style.display = "none";
+
+    };
+
+
+</script>

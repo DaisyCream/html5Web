@@ -5,9 +5,63 @@
     <title></title>
 </head>
 <style>
+    /*section{*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+    /*}*/
+
+    /*header{*/
+        /*width: 100%;*/
+        /*height: 200px;*/
+        /*border: 1px solid #000000;*/
+    /*}*/
+
+    /*#main{*/
+        /*width: 100%;*/
+        /*height: 400px;*/
+        /*display: flex;*/
+    /*}*/
+
+    /*#main > article{*/
+        /*flex: 1;*/
+        /*order: 2;*/
+        /*border: 1px solid #000000;*/
+    /*}*/
+
+    /*#main > nav{*/
+        /*width: 200px;*/
+        /*order: 1;*/
+        /*border: 1px solid #000000;*/
+    /*}*/
+
+    /*#main > aside{*/
+        /*width: 200px;*/
+        /*order: 3;*/
+        /*border: 1px solid #000000;*/
+    /*}*/
+
+    /*footer{*/
+        /*width: 100%;*/
+        /*height: 200px;*/
+        /*/!*flex: 1;*!/*/
+        /*border: 1px solid #000000*/
+    /*}*/
+
+    /*@media all and (max-width : 600px) {*/
+        /*#main{*/
+            /*flex-direction: column;*/
+        /*}*/
+        /*#main > article, #main > nav ,#main > aside{*/
+            /*width: auto;*/
+        /*}*/
+    /*}*/
+
+
     section{
+        width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-flow: column wrap;
+        justify-content: space-around;
     }
 
     header{
@@ -18,24 +72,24 @@
 
     #main{
         width: 100%;
-        height: 400px;
         display: flex;
+        height: 400px;
     }
 
-    #main > article{
-        flex: 1;
+    article{
         order: 2;
+        /*flex: 1;*/
         border: 1px solid #000000;
     }
 
     #main > nav{
-        width: 200px;
+        /*width: 300px;*/
         order: 1;
         border: 1px solid #000000;
     }
 
     #main > aside{
-        width: 200px;
+        /*width: 300px;*/
         order: 3;
         border: 1px solid #000000;
     }
@@ -43,16 +97,13 @@
     footer{
         width: 100%;
         height: 200px;
-        /*flex: 1;*/
-        border: 1px solid #000000
+        flex: 1;
+        border: 1px solid #000000;
     }
 
-    @media all and (max-width : 600px) {
+    @media all and (max-width: 600px) {
         #main{
             flex-direction: column;
-        }
-        #main > article, #main > nav ,#main > aside{
-            width: auto;
         }
     }
 
@@ -65,19 +116,19 @@
             按罚款的魔法卡卡洛斯的叫法快乐的房间爱离开阿里肯定就发来看房间啊
             安慰法你减肥哇呜呜呜呜呜案发看完你你你你你你你你你你阿斯顿和发送
             的环境法大爆发的那份阿斯顿发健康啦啦啦啦啦案说法乌尔禾发金额发挥
-            空间案件时肯定会发空间的范围awefwefa
+            空间案件时肯定会发空间的范围awefwefa2
         </article>
         <nav>
             按罚款的魔法卡卡洛斯的叫法快乐的房间爱离开阿里肯定就发来看房间啊
             安慰法你减肥哇呜呜呜呜呜案发看完你你你你你你你你你你阿斯顿和发送
             的环境法大爆发的那份阿斯顿发健康啦啦啦啦啦案说法乌尔禾发金额发挥
-            空间案件时肯定会发空间的范围
+            空间案件时肯定会发空间的范围1
         </nav>
         <aside>
             按罚款的魔法卡卡洛斯的叫法快乐的房间爱离开阿里肯定就发来看房间啊
             安慰法你减肥哇呜呜呜呜呜案发看完你你你你你你你你你你阿斯顿和发送
             的环境法大爆发的那份阿斯顿发健康啦啦啦啦啦案说法乌尔禾发金额发挥
-            空间案件时肯定会发空间的范围
+            空间案件时肯定会发空间的范围3
         </aside>
     </div>
 
