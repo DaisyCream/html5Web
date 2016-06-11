@@ -93,23 +93,44 @@
                 <li>555</li>
                 <li>666</li>
             </ul>
-
         </nav>
 
     </header>
 </body>
 </html>
 <script>
-    var  menu = document.getElementById("menu");
 
-    menu.onmousemove = function(){
-        document.getElementsByTagName('nav')[0].style.display = "block";
-    };
+    function $(target){
+        if(document.querySelector(target)){
+            return document.querySelector(target);
+        }
+        if(document.querySelectorAll(target)){
+            return document.querySelectorAll(target);
+        }
+    }
 
-    menu.onmouseout = function(){
-        document.getElementsByTagName('nav')[0].style.display = "none";
+    function displayNav(){
+        var index = 1;
+        $("#menu").onclick = function(){
+            if(index % 2 != 0){
+                $("nav").style.display = "block";
+            }
+            else{
+                $("nav").style.display = "none";
+            }
+            index++;
+        };
+    }
 
-    };
+    displayNav();
 
+    window.onresize = function(){
+        if(window.outerWidth > 500){
+            $("nav").style.display = "inline-block";
+        }
+        else{
+            $("nav").style.display = "none";
+        }
+    }
 
 </script>
